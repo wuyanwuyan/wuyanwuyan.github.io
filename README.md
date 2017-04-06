@@ -1,5 +1,6 @@
 # wuyanwuyan.github.io
-live project shows<br/>
+live project shows
+
 该工程下专门放置可预览效果的示例
 
 >1. facebook首页loading动画效果：[live demo](https://wuyanwuyan.github.io/facebook_css_animation/)
