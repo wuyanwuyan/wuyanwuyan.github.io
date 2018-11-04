@@ -1,0 +1,107 @@
+.rc-popover-trigger {
+  display: inline-block;
+}
+
+.popover-content {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  position: absolute;
+  left: 9999px;
+  top: 9999px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+          box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.popover-content.active {
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.date-picker {
+  display: inline-block;
+  width: 260px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 50px;
+  border: 1px solid #E7EAF3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 15px;
+  position: relative;
+  color: #333333;
+  cursor: pointer
+}
+
+.date-picker.active {
+  color: #DD001B;
+}
+
+.date-picker:after {
+  position: absolute;
+  right: 10px;
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #CCCCCC;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.date-picker.active:after {
+  border-top: 6px solid #DD001B;
+}
+.popover-test .m-select{
+    position: relative;
+  }
+
+    .popover-test .m-select input {
+      width: 140px;
+      height: 30px;
+      border: 1px solid #E7EAF3;
+      padding: 6px;
+      border-radius: 2px;
+    }
+
+  .popover-test .m-select:after {
+  position: absolute;
+  right: 10px;
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #CCCCCC;
+  top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+.popover-test-content {
+  width: 140px;
+}
+
+.popover-test-content li {
+    padding: 10px;
+    color: gray
+  }
+
+.popover-test-content li:hover {
+  background: #d9d9d9;
+  cursor: pointer;
+}
+
+

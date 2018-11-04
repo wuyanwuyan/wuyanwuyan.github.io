@@ -1,0 +1,56 @@
+.rc-checkbox{
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+
+}
+
+  .rc-checkbox-inner{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    background-color: white;
+    margin-right: 8px;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    vertical-align: middle;
+    position: relative
+  }
+
+  .rc-checkbox-inner.active {
+  background-color: #38f;
+  border: none;
+
+}
+
+  .rc-checkbox-inner:after {
+  background: transparent;
+  border: 2px solid #fff;
+  border-right: none;
+  border-top: none;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  content: "";
+  display: inline-block;
+  font-size: 0;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  width: 6px;
+  height: 3px;
+    -webkit-transform: translateX(-50%) rotate(-45deg) scale(0);
+            transform: translateX(-50%) rotate(-45deg) scale(0);
+  -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+  .rc-checkbox-inner.active:after {
+    -webkit-transform: translateX(-50%) rotate(-45deg) scale(1);
+            transform: translateX(-50%) rotate(-45deg) scale(1);
+
+}

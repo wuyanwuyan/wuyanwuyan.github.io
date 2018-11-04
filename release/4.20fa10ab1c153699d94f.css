@@ -1,0 +1,116 @@
+.rc-popover-trigger {
+  display: inline-block;
+}
+.popover-content {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  position: absolute;
+  left: 9999px;
+  top: 9999px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+          box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)
+}
+.popover-content.active {
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+.tooltip-wrapper {
+  //box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+  opacity: 0;
+  background: transparent;
+  -webkit-transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block
+
+}
+.tooltip-wrapper.active {
+  opacity: 1;
+}
+.tooltip-wrapper-top {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.tooltip-wrapper-right {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.tooltip-wrapper-bottom {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.tooltip-wrapper-left {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.tooltip-arrow {
+  width: 10px;
+  height: 10px;
+  border-left: 1px solid #EEEEEE;
+  border-top: 1px solid #EEEEEE;
+  border-right: transparent;
+  border-bottom: transparent;
+  background: white;
+}
+.tooltip-arrow-top{
+    -webkit-transform: translateY(-50%) rotate(-135deg);
+            transform: translateY(-50%) rotate(-135deg);
+  }
+.tooltip-arrow-right{
+    -webkit-transform: translateX(50%) rotate(-45deg);
+            transform: translateX(50%) rotate(-45deg);
+  }
+.tooltip-arrow-bottom{
+    -webkit-transform: translateY(50%) rotate(45deg);
+            transform: translateY(50%) rotate(45deg);
+  }
+.tooltip-arrow-left{
+    -webkit-transform: translateX(-50%) rotate(135deg);
+            transform: translateX(-50%) rotate(135deg);
+  }
+.tooltip-content {
+  border: 1px solid #EEEEEE;
+  padding: 16px;
+  background-color: white;
+  border-radius: 2px;
+}
