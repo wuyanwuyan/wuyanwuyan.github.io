@@ -1,1 +1,0 @@
-.dui-animate-pics{display:flex;flex-wrap:wrap}.dui-animate-pics-item{transform-origin:left center;transform:scale(0)}.dui-animate-pics-item.active{transition:transform .4s;transform:scale(1)}
